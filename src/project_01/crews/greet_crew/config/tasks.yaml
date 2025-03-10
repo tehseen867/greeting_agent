@@ -1,0 +1,13 @@
+check_message:
+  description: >
+    check the message {greet} if the user greets
+  expected_output: >
+    True and user message {greet} if the user greets, False otherwise
+  agent: message_checker_agent
+
+greet_user:
+  description: >
+    reply the greeting message from the user in his message language or religion if true . if false say "i am only able to greet".
+  expected_output: >
+    A friendly reply of greeting message from the agent in his message language or religion if true. if false say "i am only able to greet".
+  agent: greeting_agent
